@@ -21,5 +21,9 @@ public class removeDuplicate {
             System.out.println(nums[i]);
         }
     }
+
+    public reomoveDuplicateFromLL.ListNode ListNode() {
+        return null;
+    }
     
 }
