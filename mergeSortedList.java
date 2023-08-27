@@ -1,9 +1,19 @@
-import java.util.LinkedList;
 
 public class mergeSortedList{
+    public int[] mergeSort(int arr[],int p, int r){
+        int q = (p+r)/2;
+        mergeSort(arr, p, r);
+        mergeSort(arr, p+1, r);
+        mergeSort(arr, q, r);
+        return arr;
+
+    }
     public static void main(String[] args) {
-        LinkedList<Integer> list1 = new LinkedList<>();
-        list1.add(1);
-        list1.add(2)
+        int [] arr = { 0,5,8,3,7,9,0};
+        mergeSortedList myCLass = new mergeSortedList();
+        int []ans = myCLass.mergeSort(arr, 0,0);
+        for (int i : ans) {
+            System.out.print(ans[i]);
+        }
     }
 }

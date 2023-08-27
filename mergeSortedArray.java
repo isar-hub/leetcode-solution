@@ -18,7 +18,7 @@ public class mergeSortedArray {
                     ans[m]= nums2[j];
                     m++;
                 }
-                Arrays.sort(ans);
+               
             
             for (int i = 0; i < ans.length; i++) {
                 System.out.println(ans[i]);
